@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 abstract class Styles{
-  static const body3 = TextStyle(
-    fontSize: 18,
+  static const titleMedium = TextStyle(
+    fontSize: 20,
     fontWeight: FontWeight.w600
   );
 }

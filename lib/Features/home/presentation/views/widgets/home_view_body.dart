@@ -8,30 +8,40 @@ class HomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      children: [
-        CustomAppBar(),
-        FeaturedListViewItem(),
-        BestSeller(),
-      ],
+    return  const Padding(
+      padding: EdgeInsets.symmetric(horizontal: 24),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          CustomAppBar(),
+          FeaturedListViewItem(),
+          SizedBox(
+            height: 50,
+          ),
+          Text(
+            'Best Seller',
+            style: Styles.titleMedium,
+          )
+        ],
+      ),
     );
   }
 }
 
-class BestSeller extends StatelessWidget {
-  const BestSeller({super.key});
+// class BestSeller extends StatelessWidget {
+//   const BestSeller({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return const Column(
-      children: [
-        Text(
-          'Best Seller',
-          style: Styles.body3,
-        )
-      ],
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return const Column(
+//       children: [
+//         Text(
+//           'Best Seller',
+//           style: Styles.body3,
+//         )
+//       ],
+//     );
+//   }
+// }
 
 
