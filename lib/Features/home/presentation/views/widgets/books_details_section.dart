@@ -13,7 +13,7 @@ class BookDetailsSection extends StatelessWidget {
     var width = MediaQuery.of(context).size.width;
     return Column(
       children: [
-         Padding(
+        Padding(
           padding: EdgeInsets.symmetric(
             horizontal: width * .2,
           ),
@@ -51,7 +51,6 @@ class BookDetailsSection extends StatelessWidget {
           height: 37,
         ),
         const BooksAction(),
-        
       ],
     );
   }
