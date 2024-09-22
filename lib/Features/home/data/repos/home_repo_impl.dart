@@ -60,8 +60,7 @@ class HomeRepoImpl implements HomeRepo {
   }
 
   @override
-  Future<Either<Failure, List<BookModel>>> fetchSimilarBooks(
-      {required String category}) async {
+  Future<Either<Failure, List<BookModel>>> fetchSimilarBooks() async {
     try {
       var data = await apiService.get(
           endPoint:
